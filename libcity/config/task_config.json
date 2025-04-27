@@ -1,0 +1,16 @@
+{
+    "traffic_state_pred": {
+        "allowed_model": [
+            "GLFormer"
+        ],
+        "allowed_dataset": [
+            "PeMS04", "PeMS07", "PeMS08",
+            "NYCTaxi", "T-Drive", "CHIBike"
+        ],
+        "GLFormer": {
+            "dataset_class": "GLFormerDataset",
+            "executor": "GLFormerExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        }
+    }
+}
